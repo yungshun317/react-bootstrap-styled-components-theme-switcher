@@ -26,4 +26,6 @@ const themes = {
 		text1: "#82584d",
 		text2: "#c7924c"
 	}
-}
+};
+
+export default themes;
