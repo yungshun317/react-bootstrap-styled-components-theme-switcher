@@ -1,32 +1,35 @@
 import React from "react";
 
 import KitNavbar from "../kit/KitNavbar";
-import KitDropdown from "../kit/KitDropdown";
+import { KitDropdown } from "../kit/KitDropdown";
+import { KitDropdownItem } from "../kit/KitDropdown";
 
 export default function Navigation(props) {
-    const renderColor = (color, index) => {
+    const renderItem = (theme, index) => {
     	return (
     		<KitDropdownItem
-    		    onSelect={() => props.setColorIndex(index)}
+    		    onSelect={() => props.setThemeIndex(index)}
     		    key={index}
     		>
-    		    {color.title}
+    		    {theme.title}
     		</KitDropdownItem>
     	);
     };
 
-	const renderColorMenu = () => {
-		const { colors, colorIndex: current } = props;
+	const renderThemeMenu = () => {
+		const { themes, themeIndex: current } = props;
 		return (
 			<KitDropdown
 			    alignRight
-			    label={colors[current].title}
-			    items={props.destinations.map((color, index) => renderItem(color, index))}
+			    label={themes[current].title}
+			    items={props.themes.map((theme, index) => renderItem(theme, index))}
 			/>
 		);
 	};
 
 	return (
-		<KitNavbar></KitNavbar>
+		<KitNavbar>
+		    {renderThemeMenu()}
+		</KitNavbar>
 	);
 }

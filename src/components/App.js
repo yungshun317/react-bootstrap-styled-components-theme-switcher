@@ -6,21 +6,25 @@ import { KitGlobal } from "../kit/KitGlobal";
 import Navigation from "./Navigation";
 
 export default function App(props) {
-	const [colorIndex, setColorIndex] = useState(0);
+	// Set default themeIndex = 0
+	const [themeIndex, setThemeIndex] = useState(0);
+	// Set default theme = themes.red from the `themes` dataset
 	const [theme, setTheme] = useState(themes.red);
-	const color = props.colors[colorIndex];
+	// Get values from the `themes` prop 
+	const colorTheme = props.themes[themeIndex];
 
+    // Set theme according to the values from the `themes` prop
     useEffect(() => {
-    	setTheme(themes[color.theme]);
-    }, [color]);
+    	setTheme(themes[colorTheme.theme]);
+    }, [colorTheme]);
 
 	return (
 		<ThemeProvider theme={theme}>
 		    <KitGlobal />
 		    <Navigation
 		        {...props}
-		        colorIndex={colorIndex}
-		        setColorIndex={setColorIndex}
+		        themeIndex={themeIndex}
+		        setThemeIndex={setThemeIndex}
 		    />
 		</ThemeProvider>
 	);

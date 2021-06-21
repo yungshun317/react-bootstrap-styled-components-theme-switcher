@@ -5,7 +5,7 @@ import App from "./components/App";
 
 const rootElement = document.getElementById("root");
 
-const COLORS = [
+const THEMES = [
   {
   	"theme": "red",
   	"title": "Cherry"
@@ -20,7 +20,7 @@ const COLORS = [
 
 render(
     <React.StrictMode>
-        <App colors={COLORS} />
+        <App themes={THEMES} />
     </React.StrictMode>,
     rootElement
 );
