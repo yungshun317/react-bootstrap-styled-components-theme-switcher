@@ -1,9 +1,9 @@
 import React from "react";
 
-import { Navbar } from "react-bootstrap"; 
+import KitNavbar from "../kit/KitNavbar";
 
 export default function Navigation(props) {
 	return (
-		<Navbar></Navbar>
+		<KitNavbar></KitNavbar>
 	);
 }
