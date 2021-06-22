@@ -29,7 +29,7 @@ export default function Navigation(props) {
 	};
     */
 	return (
-		<KitNavbar>
+		<KitNavbar {...props}>
 		</KitNavbar>
 	);
 }

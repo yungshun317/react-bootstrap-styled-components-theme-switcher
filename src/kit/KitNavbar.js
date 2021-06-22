@@ -14,10 +14,10 @@ const StyledBootstrapNavbarCollapse = styled(Navbar.Collapse)``;
 
 export default function KitNavbar(props) {
 	return (
-		<StyledBootstrapNavbar fixed="top" {...props}>
+		<StyledBootstrapNavbar fixed="top">
 		    <StyledBootstrapNavbarBrand>Theme Switcher</StyledBootstrapNavbarBrand>
 		    <StyledBootstrapNavbarToggle aria-controls="basic-navbar-nav" />
-		    <StyledBootstrapNavbarCollapse><KitNav /> </StyledBootstrapNavbarCollapse>
+		    <StyledBootstrapNavbarCollapse><KitNav {...props}/> </StyledBootstrapNavbarCollapse>
 		    
 		</StyledBootstrapNavbar>
 	);

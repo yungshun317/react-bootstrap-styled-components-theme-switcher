@@ -7,12 +7,25 @@ const StyledBootstrapNavDropdown = styled(NavDropdown)``;
 const StyledBootstrapNavDropdownItem = styled(NavDropdown.Item);
 
 export default function KitNavDropdown(props) {
+	const renderItem = (theme, index) => {
+		return (
+			<StyledBootstrapNavDropdownItem
+			    onSelect={() => props.setThemeIndex(index)}
+			    key={index}
+			>
+			    {theme.title}
+			</StyledBootstrapNavDropdownItem>
+		);
+	};
+
+    const { themes, themeIndex: current } = props;
+
 	return (
-		<StyledBootstrapNavDropdown title="Dropdown">
-		    <StyledBootstrapNavDropdownItem>Action</StyledBootstrapNavDropdownItem>
-		    <StyledBootstrapNavDropdownItem>Another Action</StyledBootstrapNavDropdownItem>
-		    <StyledBootstrapNavDropdownItem>Something</StyledBootstrapNavDropdownItem>
-		</StyledBootstrapNavDropdown>
+	    <StyledBootstrapNavDropdown
+			alignRight
+			label={themes[current].title}
+			items={props.themes.map((theme, index) => renderItem(theme, index))}
+		/>
 	);
 }
 

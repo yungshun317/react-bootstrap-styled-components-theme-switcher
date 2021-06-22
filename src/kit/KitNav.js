@@ -12,7 +12,7 @@ export default function KitNav(props) {
 		<StyledBootstrapNav>
 		    <StyledBootstrapNavLink>Home</StyledBootstrapNavLink>
 		    <StyledBootstrapNavLink>Link</StyledBootstrapNavLink>
-		    <KitNavDropdown></KitNavDropdown>
+		    <KitNavDropdown {...props}></KitNavDropdown>
 		</StyledBootstrapNav>
 	);
 }
