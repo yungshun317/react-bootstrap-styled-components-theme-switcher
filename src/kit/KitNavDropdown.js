@@ -1,7 +1,22 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { Dropdown } from "react-bootstrap";
+import { NavDropdown } from "react-bootstrap";
 
+const StyledBootstrapNavDropdown = styled(NavDropdown)``;
+
+const StyledBootstrapNavDropdownItem = styled(NavDropdown.Item);
+
+export default function KitNavDropdown(props) {
+	return (
+		<StyledBootstrapNavDropdown title="Dropdown">
+		    <StyledBootstrapNavDropdownItem>Action</StyledBootstrapNavDropdownItem>
+		    <StyledBootstrapNavDropdownItem>Another Action</StyledBootstrapNavDropdownItem>
+		    <StyledBootstrapNavDropdownItem>Something</StyledBootstrapNavDropdownItem>
+		</StyledBootstrapNavDropdown>
+	);
+}
+
+/*
 export const StyledBootstrapDropdownToggle = styled(Dropdown.Toggle)`
 `;
 
@@ -68,3 +83,4 @@ export function KitDropdown(props) {
 		</StyledBootstrapDropdown>
 	);
 }
+*/
