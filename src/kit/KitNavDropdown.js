@@ -23,26 +23,11 @@ export default function KitNavDropdown(props) {
 	return (
 	    <StyledBootstrapNavDropdown
 			alignRight
-			data-toggle="dropdown"
-			role="button"
 			title="Dropdown"
-			id="basic-nav-dropdown"
 			label={themes[current].title}
 			items={props.themes.map((theme, index) => renderItem(theme, index))}
 		>
-            <StyledBootstrapNavDropdownItem
-			   href="#"
-			>
-			    Hello
-			</StyledBootstrapNavDropdownItem>
-			<StyledBootstrapNavDropdownItem href="#"
-			   
-			>
-			    World
-			</StyledBootstrapNavDropdownItem>
-
-		/*
-		    { 
+            { 
 		    	props.themes.map((theme, index) => (
 		    	    <StyledBootstrapNavDropdownItem
 			            onSelect={() => props.setThemeIndex(index)}
@@ -51,7 +36,6 @@ export default function KitNavDropdown(props) {
 			        </StyledBootstrapNavDropdownItem>
 			    ))
 			}
-			*/
 		</StyledBootstrapNavDropdown>
 	);
 }
