@@ -4,6 +4,7 @@ import { ThemeProvider } from "styled-components";
 import themes from "../theme/";
 import { KitGlobal } from "../kit/KitGlobal";
 import Navigation from "./Navigation";
+import Page from "./Page";
 
 export default function App(props) {
 	// Set default themeIndex = 0
@@ -22,6 +23,11 @@ export default function App(props) {
 		<ThemeProvider theme={theme}>
 		    <KitGlobal />
 		    <Navigation
+		        {...props}
+		        themeIndex={themeIndex}
+		        setThemeIndex={setThemeIndex}
+		    />
+		    <Page
 		        {...props}
 		        themeIndex={themeIndex}
 		        setThemeIndex={setThemeIndex}
