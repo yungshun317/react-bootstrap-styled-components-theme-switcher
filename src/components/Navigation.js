@@ -1,8 +1,8 @@
 import React from "react";
 
 import KitNavbar from "../kit/KitNavbar";
-import { KitDropdown } from "../kit/KitDropdown";
-import { KitDropdownItem } from "../kit/KitDropdown";
+//import { KitDropdown } from "../kit/KitDropdown";
+//import { KitDropdownItem } from "../kit/KitDropdown";
 
 export default function Navigation(props) {
 	/*

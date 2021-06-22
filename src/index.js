@@ -19,8 +19,6 @@ const THEMES = [
 ]
 
 render(
-    <React.StrictMode>
-        <App themes={THEMES} />
-    </React.StrictMode>,
+    <App themes={THEMES} />,
     rootElement
 );
