@@ -5,6 +5,7 @@ import { KitDropdown } from "../kit/KitDropdown";
 import { KitDropdownItem } from "../kit/KitDropdown";
 
 export default function Navigation(props) {
+	/*
     const renderItem = (theme, index) => {
     	return (
     		<KitDropdownItem
@@ -26,10 +27,9 @@ export default function Navigation(props) {
 			/>
 		);
 	};
-
+    */
 	return (
 		<KitNavbar>
-		    {renderThemeMenu()}
 		</KitNavbar>
 	);
 }
