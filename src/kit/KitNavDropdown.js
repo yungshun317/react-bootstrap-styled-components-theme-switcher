@@ -4,7 +4,7 @@ import { NavDropdown } from "react-bootstrap";
 
 const StyledBootstrapNavDropdown = styled(NavDropdown)``;
 
-const StyledBootstrapNavDropdownItem = styled(NavDropdown.Item);
+const StyledBootstrapNavDropdownItem = styled(NavDropdown.Item)``;
 
 export default function KitNavDropdown(props) {
 	const renderItem = (theme, index) => {
@@ -23,9 +23,36 @@ export default function KitNavDropdown(props) {
 	return (
 	    <StyledBootstrapNavDropdown
 			alignRight
+			data-toggle="dropdown"
+			role="button"
+			title="Dropdown"
+			id="basic-nav-dropdown"
 			label={themes[current].title}
 			items={props.themes.map((theme, index) => renderItem(theme, index))}
-		/>
+		>
+            <StyledBootstrapNavDropdownItem
+			   href="#"
+			>
+			    Hello
+			</StyledBootstrapNavDropdownItem>
+			<StyledBootstrapNavDropdownItem href="#"
+			   
+			>
+			    World
+			</StyledBootstrapNavDropdownItem>
+
+		/*
+		    { 
+		    	props.themes.map((theme, index) => (
+		    	    <StyledBootstrapNavDropdownItem
+			            onSelect={() => props.setThemeIndex(index)}
+			            key={index}>
+			            {theme.title}
+			        </StyledBootstrapNavDropdownItem>
+			    ))
+			}
+			*/
+		</StyledBootstrapNavDropdown>
 	);
 }
 
