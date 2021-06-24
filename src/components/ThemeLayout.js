@@ -18,7 +18,23 @@ export default function ThemeLayout(props) {
 			    <KitButton></KitButton>
 			</KitHero>
 		);
-	}
+	};
+
+	const renderCard = () => {
+		return (
+			<KitCard>
+			    <KitCardBody>
+                    <KitCardTitle></KitCardTitle>
+                    <KitCardSubtitle></KitCardSubtitle>
+                    <KitList>
+                         <KitListItem></KitListItem>
+                         <KitListItem></KitListItem>
+                    </KitList>
+                </KitCardBody>
+                <KitCardFooter></KitCardFooter>
+			</KitCard>
+		);
+	};
 
 	return (
 		<KitContainer>
