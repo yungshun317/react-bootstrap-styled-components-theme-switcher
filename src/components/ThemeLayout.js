@@ -1,6 +1,6 @@
 import React from "react";
 
-import { KitContainer, KitRow, KitCol } from "../kit/KitContainer";
+import { KitContainer, KitRow, KitCol } from "../kit";
 
 export default function ThemeLayout(props) {
 	return (

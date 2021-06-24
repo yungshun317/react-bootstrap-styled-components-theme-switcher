@@ -12,7 +12,7 @@ const StyledBootstrapNavbarBrand = styled(Navbar.Brand)``;
 const StyledBootstrapNavbarToggle = styled(Navbar.Toggle)``;
 const StyledBootstrapNavbarCollapse = styled(Navbar.Collapse)``;
 
-export default function KitNavbar(props) {
+export function KitNavbar(props) {
 	return (
 		<StyledBootstrapNavbar fixed="top">
 		    <StyledBootstrapNavbarBrand>Theme Switcher</StyledBootstrapNavbarBrand>

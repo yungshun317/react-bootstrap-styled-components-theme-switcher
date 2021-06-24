@@ -1,6 +1,6 @@
 import React from "react";
 
-import KitNavbar from "../kit/KitNavbar";
+import { KitNavbar } from "../kit";
 //import { KitDropdown } from "../kit/KitDropdown";
 //import { KitDropdownItem } from "../kit/KitDropdown";
 

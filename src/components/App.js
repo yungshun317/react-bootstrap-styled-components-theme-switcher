@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { ThemeProvider } from "styled-components";
 
 import themes from "../theme/";
-import { KitGlobal } from "../kit/KitGlobal";
+import { KitGlobal } from "../kit";
 import Navigation from "./Navigation";
 import Page from "./Page";
 

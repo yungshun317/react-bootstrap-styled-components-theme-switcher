@@ -2,7 +2,7 @@ import React from "react";
 
 import ThemeCarousel from "./ThemeCarousel";
 import ThemeLayout from "./ThemeLayout";
-import { KitContainer, KitRow, KitCol } from "../kit/KitContainer";
+import { KitContainer, KitRow, KitCol } from "../kit";
 
 export default function Page(props) {
 	return (

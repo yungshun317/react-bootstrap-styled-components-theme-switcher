@@ -16,4 +16,4 @@ export {
 	KitNavbar,
 	KitNav,
 	KitNavDropdown
-}
+};
