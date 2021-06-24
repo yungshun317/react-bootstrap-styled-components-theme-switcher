@@ -5,7 +5,8 @@ import {
 	KitRow, 
 	KitCol,
 	KitHero,
-	KitButton
+	KitButton,
+	KitCard
 } from "../kit";
 
 export default function ThemeLayout(props) {
@@ -23,11 +24,13 @@ export default function ThemeLayout(props) {
 		<KitContainer>
 		    <KitRow>
 		        <KitCol>
-		            { renderHero() }
+		            {renderHero()}
 		        </KitCol>
 		    </KitRow>
 		    <KitRow>
-		        <KitCol lg={true}></KitCol>
+		        <KitCol lg={true}>
+		            {renderCard()}
+		        </KitCol>
 		        <KitCol sm></KitCol>
 		        <KitCol sm></KitCol>
 		    </KitRow>

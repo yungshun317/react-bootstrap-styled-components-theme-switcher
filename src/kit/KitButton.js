@@ -4,7 +4,7 @@ import { Button } from "react-bootstrap";
 
 const StyledBootstrapButton = styled(Button)``;
 
-export default function KitButton(props) {
+export function KitButton(props) {
 	return (
 		<StyledBootstrapButton {...props} />;
 	);
