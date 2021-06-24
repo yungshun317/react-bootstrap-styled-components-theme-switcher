@@ -9,3 +9,8 @@ export function KitCard(props) {
 		<StyledBootstrapCard {...props} />
 	);
 }
+
+export function KitCardTitle = styled(Card.Title)``;
+export function KitCardSubtitle = styled(Card.Subtitle)``;
+export function KitCardBody = styled(Card.Body)``;
+export function KitCardFooter = styled(Card.Footer)``;

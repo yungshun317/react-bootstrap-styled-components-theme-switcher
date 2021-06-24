@@ -6,7 +6,11 @@ import {
 	KitCol,
 	KitHero,
 	KitButton,
-	KitCard
+	KitCard,
+	KitCardTitle,
+	KitCardSubtitle,
+	KitCardBody,
+    KitCardFooter
 } from "../kit";
 
 export default function ThemeLayout(props) {
