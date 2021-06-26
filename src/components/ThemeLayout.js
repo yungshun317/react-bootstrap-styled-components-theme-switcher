@@ -10,7 +10,9 @@ import {
 	KitCardTitle,
 	KitCardSubtitle,
 	KitCardBody,
-    KitCardFooter
+    KitCardFooter,
+    KitList,
+    KitListItem
 } from "../kit";
 
 export default function ThemeLayout(props) {

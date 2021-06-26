@@ -6,7 +6,7 @@ import { KitNavbar } from "./KitNavbar";
 import { KitNav } from "./KitNav";
 import { KitNavDropdown } from "./KitNavDropdown";
 import { KitCard, KitCardTitle, KitCardSubtitle, KitBody, KitCardFooter } from "./KitCard";
-
+import { KitList, KitListItem } from "./KitList";
 
 export {
 	KitGlobal,
@@ -22,5 +22,7 @@ export {
 	KitCardTitle,
 	KitCardSubtitle,
 	KitCardBody,
-	KitCardFooter
+	KitCardFooter,
+	KitList,
+	KitListItem
 };
