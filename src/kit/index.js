@@ -7,6 +7,7 @@ import { KitNav } from "./KitNav";
 import { KitNavDropdown } from "./KitNavDropdown";
 import { KitCard, KitCardTitle, KitCardSubtitle, KitBody, KitCardFooter } from "./KitCard";
 import { KitList, KitListItem } from "./KitList";
+import { KitButton, KitToggleButton, KitToggleButtonGroup } from "./KitButton";
 
 export {
 	KitGlobal,
@@ -24,5 +25,8 @@ export {
 	KitCardBody,
 	KitCardFooter,
 	KitList,
-	KitListItem
+	KitListItem,
+	KitButton,
+	KitToggleButton,
+	KitToggleButtonGroup
 };
