@@ -5,6 +5,8 @@ import { KitCarousel, KitCarouselItem } from "./KitCarousel";
 import { KitNavbar } from "./KitNavbar";
 import { KitNav } from "./KitNav";
 import { KitNavDropdown } from "./KitNavDropdown";
+import { KitCard, KitCardTitle, KitCardSubtitle, KitBody, KitCardFooter } from "./KitCard";
+
 
 export {
 	KitGlobal,
@@ -15,5 +17,10 @@ export {
 	KitCol,
 	KitNavbar,
 	KitNav,
-	KitNavDropdown
+	KitNavDropdown,
+	KitCard,
+	KitCardTitle,
+	KitCardSubtitle,
+	KitCardBody,
+	KitCardFooter
 };
