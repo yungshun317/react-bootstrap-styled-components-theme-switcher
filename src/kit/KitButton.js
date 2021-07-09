@@ -6,7 +6,7 @@ const StyledBootstrapButton = styled(Button)``;
 
 export function KitButton(props) {
 	return (
-		<StyledBootstrapButton {...props} />;
+		<StyledBootstrapButton {...props} />
 	);
 } 
 
@@ -14,7 +14,7 @@ const StyledBootstrapToggleButton = styled(ToggleButton)``;
 
 export function KitToggleButton(props) {
 	return (
-		<StyledBootstrapToggleButton {...props} />;
+		<StyledBootstrapToggleButton {...props} />
 	);
 }
 

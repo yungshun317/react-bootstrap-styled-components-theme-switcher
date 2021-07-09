@@ -10,7 +10,7 @@ export function KitCard(props) {
 	);
 }
 
-export function KitCardTitle = styled(Card.Title)``;
-export function KitCardSubtitle = styled(Card.Subtitle)``;
-export function KitCardBody = styled(Card.Body)``;
-export function KitCardFooter = styled(Card.Footer)``;
+export const KitCardTitle = styled(Card.Title)``;
+export const KitCardSubtitle = styled(Card.Subtitle)``;
+export const KitCardBody = styled(Card.Body)``;
+export const KitCardFooter = styled(Card.Footer)``;
